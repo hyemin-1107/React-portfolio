@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es5",                          // 변환할 ECMAScript 버전 (es5가 일반적)
+    "lib": ["dom", "esnext"],                 // 사용할 라이브러리 (DOM과 최신 ES 기능 포함)
+    "outDir": "./dist",              
+    "allowJs": true,                          // JavaScript 파일도 포함할 수 있게 허용
+    "strict": true,                           // 엄격한 타입 검사 (기본적으로 추천됨)
+    "skipLibCheck": true,                     // 라이브러리의 타입 검사 생략 (컴파일 속도 향상)
+    "esModuleInterop": true,                  // CommonJS와 ES Module 간의 호환성 설정
+    "moduleResolution": "node",               // 모듈 해석 방식 (Node.js 모듈 시스템)
+    "jsx": "react-jsx"                        // React JSX 변환 방식
+  },
+  "include": ["src/**/*"],                    // src 폴더 내 모든 파일 포함
+  "exclude": ["node_modules"]                 // node_modules 폴더 제외
+}

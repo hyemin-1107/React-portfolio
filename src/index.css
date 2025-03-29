@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap');
+/* Reset */
+
+html, body, h1, h2, h3, h4, h5, h6, div, span, p, blockquote, pre, code, address, ul, ol, li, nav, section, article, header, footer, main, aside, dl, dt, dd, table, thead, tbody, tfoot, label, caption, th, td, form, fieldset, legend, hr, input, button, textarea, object, figure, figcaption {
+  margin: 0;
+  padding: 0;
+  font-family: "Hahmlet", serif;
+  color: #555;
+}
+
+body, input, select, textarea, button, img, fieldset {
+  border: none;
+}
+
+em, i, a, button{
+  font-style: normal;
+  text-decoration: none;
+  color: #6E6D70;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.active{
+  border-bottom: 1px solid #000;
+  color: #000;
+  transform: scale(1.07);
+  font-weight: 500;
+}
+
+.projectactive{
+  color: #000;
+  transform: scale(1.07);
+  font-weight: 500;
+}
