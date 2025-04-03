@@ -32,12 +32,12 @@ const ContactContents = () => {
                 </ContactBox>
                 <StudyPage className="contact">
                     <p>더 많고 자세한 저의 기록들이 있습니다.</p>
-                    <a href="https://rust-collarbone-363.notion.site/HYEMIN-PORTFOLIO-28404bfd03854947b1dcdc14aff04170?pvs=4" target='blank' rel="noreferrer">
+                    <a className="button-text" href="https://rust-collarbone-363.notion.site/HYEMIN-PORTFOLIO-28404bfd03854947b1dcdc14aff04170?pvs=4" target='blank' rel="noreferrer">
                         <ContactImg src={ico_notion} alt="" />
                         <ContactImgHover src={ico_notionhover} alt="" />
                         NOTION
                     </a>
-                    <a href="https://github.com/hyemin-1107" target='blank' rel="noreferrer">
+                    <a className="button-text" href="https://github.com/hyemin-1107" target='blank' rel="noreferrer">
                         <ContactImg src={ico_contactgithub} alt="" />
                         <ContactImgHover src={ico_github_hover} alt="" />
                         GITHUB

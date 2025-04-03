@@ -24,7 +24,7 @@ const SubProjectContents = () => {
   return (
     <SubProjectWrap id="content_subproject" className="content">
       <SubProject className="sub">
-        <SubProjectNumber>1-1</SubProjectNumber>
+        <SubProjectNumber className="project-number">1-1</SubProjectNumber>
         <SubProjectImg src={img_commentlike} alt="코멘트,좋아요버튼"></SubProjectImg>
         <SubProjectText>
           <h3>Comment, Like </h3>
@@ -73,7 +73,7 @@ const SubProjectContents = () => {
         </ModalWrap>
       )}
       <SubProject className="sub">
-        <SubProjectNumber>1-2</SubProjectNumber>
+        <SubProjectNumber className="project-number">1-2</SubProjectNumber>
         <SubProjectImg src={img_pagination} alt="페이지네이션"></SubProjectImg>
         <div></div>
         <SubProjectText>
@@ -459,13 +459,14 @@ const SubProjectNumber = styled.span`
   font-weight: 900;
 
   opacity: .1;
-  z-index: -1;
+  // z-index: -1;
 `
 
 const SubProjectImg = styled.img`
   width: 510px;
   height: 310px;
   
+  z-index: 1;
   border-radius: 6px 6px 0 0;
 `
 

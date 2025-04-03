@@ -26,7 +26,7 @@ const ProjectContents = () => {
             </ProjectImg>
           </div>
           <ProjectText>
-            <ProjectNumber>02</ProjectNumber>
+            <ProjectNumber className="project-number">02</ProjectNumber>
             <h3>
               Sooldamhwa Homepage clone coding
             </h3>
@@ -50,7 +50,7 @@ const ProjectContents = () => {
         </ProjectWrap>
         <ProjectWrap id="nav_projectportfolio">
           <ProjectText id="content_portfolio" className="content">
-            <ProjectNumber>03</ProjectNumber>
+            <ProjectNumber className="project-number">03</ProjectNumber>
             <h3>
               Portfolio Site
             </h3>
@@ -84,7 +84,7 @@ const ProjectContents = () => {
             </ProjectImg>
           </div>
           <ProjectText>
-            <ProjectNumber>04</ProjectNumber>
+            <ProjectNumber className="project-number">04</ProjectNumber>
             <h3>
               AWS 서버 배포
             </h3>
@@ -237,6 +237,6 @@ const ProjectNumber = styled.div`
   font-size: 170px;
   font-weight: 900;
 
-  z-index: -1;
+  // z-index: -1;
   opacity: .1;
 `

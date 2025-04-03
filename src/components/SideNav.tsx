@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Observation from "../utills/Observation";
+import Observation from "../utills/observation";
 import useSetShow from "../utills/useSetShow";
 import styled, { keyframes } from "styled-components";
 import { Link } from "react-scroll";
