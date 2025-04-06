@@ -17,8 +17,8 @@ const SubProjectContents = () => {
 
   const ButtonMmodalRef = useRef<HTMLButtonElement>(null);
   const modalContainerRef = useRef<HTMLDivElement>(null);
-  useOnClickOutside({ ref: ButtonMmodalRef, handler: () => setIsCommentModal(false) });
-  useOnClickOutside({ ref: ButtonMmodalRef, handler: () => setIsPaginationModal(false) });
+  useOnClickOutside({ ref: modalContainerRef, handler: () => setIsCommentModal(false) });
+  useOnClickOutside({ ref: modalContainerRef, handler: () => setIsPaginationModal(false) });
 
 
   return (
@@ -50,7 +50,7 @@ const SubProjectContents = () => {
         <ModalWrap>
         <ModalContainer ref={modalContainerRef}>
           <ModalHeader>
-            <h3>Comment, Like</h3>
+            <h3 className="text-dark">Comment, Like</h3>
             <ModalCloseButton
               onClick={() =>
                 onClickModal(isCommentModal, setIsCommentModal)}>
@@ -59,7 +59,7 @@ const SubProjectContents = () => {
           </ModalHeader>
           <ModalText>
             <img src={video_commentlike} alt="코멘트,좋아요버튼" />
-            <div>
+            <div className="text-dark">
               <p> 댓글을 저장할 state와 input comment를 저장하는 state를 작성합니다.</p>
               <p> 댓글, e.target.value를 state에 저장하는 onChange 함수 작성합니다.</p>
               <p> onChange 함수를 댓글 입력 input tag에 적용해줍니다.</p>
@@ -99,7 +99,7 @@ const SubProjectContents = () => {
         <ModalWrap>
         <ModalWrapPagination ref={modalContainerRef}>
           <ModalHeader>
-            <h3>Login, Pagination</h3>
+            <h3 className="text-dark">Login, Pagination</h3>
             <ModalCloseButton
               onClick={() =>
                 onClickModal(isPaginationModal, setIsPaginationModal)}>
@@ -108,7 +108,7 @@ const SubProjectContents = () => {
           </ModalHeader>
           <ModalTextPagination>
             <img src={video_pagination} alt="" />
-            <div>
+            <div className="text-dark">
               <p>ID와 PW를 저장하는 state 생성하고 e.target.value 를 state에 저장하는 onChange 함수를 각각의 input tag에 적용합니다.</p>
               <p>ID와 PW를 비교하는 함수 작성, 일치하면 main page로 이동하고 틀릴시 alert()창 띄웁니다.</p>
               <p>현재 페이지 limit, page당 표시할 데이터 수를 설정하고 API를 저장하는 useState를 생성하고 fetch로 API 호출합니다.</p>
@@ -152,7 +152,7 @@ const ModalContainer = styled.div`
   width: 990px;
   height: 570px;
     
-  z-index: 100;
+  z-index: 1000;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 6px;
   background-color: #fff;
@@ -182,7 +182,7 @@ const ModalWrapPagination = styled.div`
   width: 1140px;
   height: 596px;
     
-  z-index: 100;
+  z-index: 1000;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 6px;
   background-color: #fff;

@@ -28,7 +28,7 @@ const ProjectContents = () => {
           <ProjectText>
             <ProjectNumber className="project-number">02</ProjectNumber>
             <h3>
-              Sooldamhwa Homepage clone coding
+              Sooldamhwa Homepage Clone Coding
             </h3>
             <p>
               전통주를 소개하고 구독 시스템을 통해

@@ -18,6 +18,9 @@ const GlobalStyle = createGlobalStyle`
     .active{
         border-bottom: ${({ theme }) => theme.borderBottom};
     }
+    .text-dark, .text-dark > p{
+        color: #666;
+    }
 `;
 
 export default GlobalStyle;
