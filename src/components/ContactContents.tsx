@@ -17,7 +17,7 @@ const ContactContents = () => {
                 <div></div>
             </ProjectTitle>
             <ContactWrap id="content_contact" className="content">
-                <ContactBox className="contact">
+                <ContactBox>
                     <div>저의 포트폴리오를 봐주셔서 감사합니다.</div>
                     <Contact>
                         <img src={ico_phone} alt=""></img>
@@ -30,7 +30,7 @@ const ContactContents = () => {
                     </Contact>
                     <div>hyem92.11.07@gmail.com</div>
                 </ContactBox>
-                <StudyPage className="contact">
+                <StudyPage>
                     <p>더 많고 자세한 저의 기록들이 있습니다.</p>
                     <a className="button-text" href="https://rust-collarbone-363.notion.site/HYEMIN-PORTFOLIO-28404bfd03854947b1dcdc14aff04170?pvs=4" target='blank' rel="noreferrer">
                         <ContactImg src={ico_notion} alt="" />
@@ -90,7 +90,7 @@ const ContactBox = styled.div`
 
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.1) 0px 7px 10px -2px, rgba(0, 0, 0, 0.1) 0px -2px 0px inset;
+  box-shadow: ${({ theme }) => theme.boxShadow};
   
   div{
     margin-bottom: 6px;
@@ -149,8 +149,8 @@ const StudyPage = styled.div`
 
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.1) 0px 7px 10px -2px, rgba(0, 0, 0, 0.1) 0px -2px 0px inset;
-
+  box-shadow: ${({ theme }) => theme.boxShadow};
+  
   p{
     margin-bottom: 8px;
   }

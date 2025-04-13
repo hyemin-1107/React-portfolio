@@ -23,7 +23,7 @@ const SubProjectContents = () => {
 
   return (
     <SubProjectWrap id="content_subproject" className="content">
-      <SubProject className="sub">
+      <SubProject>
         <SubProjectNumber className="project-number">1-1</SubProjectNumber>
         <SubProjectImg src={img_commentlike} alt="코멘트,좋아요버튼"></SubProjectImg>
         <SubProjectText>
@@ -72,7 +72,7 @@ const SubProjectContents = () => {
         </ModalContainer>
         </ModalWrap>
       )}
-      <SubProject className="sub">
+      <SubProject>
         <SubProjectNumber className="project-number">1-2</SubProjectNumber>
         <SubProjectImg src={img_pagination} alt="페이지네이션"></SubProjectImg>
         <div></div>
@@ -345,7 +345,7 @@ const SubProject = styled.section`
   
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(0, 0, 0, 0.1) 0px 7px 10px -2px, rgba(0, 0, 0, 0.1) 0px -2px 0px inset;
+  box-shadow: ${({ theme }) => theme.boxShadow};
 `
 
 const SubProjectText = styled.section`

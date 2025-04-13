@@ -9,9 +9,6 @@ const GlobalStyle = createGlobalStyle`
         color: ${({ theme }) => theme.textColor};
         transition: background-color 0.3s ease, color 0.3s ease;   
     }
-    .sub , .contact {
-      box-shadow: ${({ theme }) => theme.boxShadow};
-    }
     .project-number{
         opacity: ${({ theme }) => theme.projectNumber};
     }
