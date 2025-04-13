@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import styled from "styled-components";
-import { onClickModal } from "../utills/onClickModal";
-import { useOnClickOutside } from "../utills/useOnClickOutside";
+import { onClickModal } from "../utils/onClickModal";
+import { useOnClickOutside } from "../utils/useOnClickOutside";
 import img_pagination from '../images/img_pagination.png'
 import img_commentlike from '../images/img_commentlike.png'
 import ico_click from '../images/ico_click.png'

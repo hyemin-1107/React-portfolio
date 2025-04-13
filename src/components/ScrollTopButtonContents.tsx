@@ -1,6 +1,6 @@
 import { useState }from "react";
 import styled, { keyframes } from "styled-components";
-import useSetShow from "../utills/useSetShow"
+import useSetShow from "../utils/useSetShow"
 
 const ScrollTopButtonContents = () => {
 

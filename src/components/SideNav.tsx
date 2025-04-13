@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import Observation from "../utills/observation";
-import useSetShow from "../utills/useSetShow";
+import Observation from "../utils/observation";
+import useSetShow from "../utils/useSetShow";
 import styled, { keyframes } from "styled-components";
 import { Link } from "react-scroll";
 
